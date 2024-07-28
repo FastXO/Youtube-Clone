@@ -1,0 +1,29 @@
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body{
+  /* Inherited styles */
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);
+  font-family: Roboto, Arial;
+}
+
+.circle-checkmark {
+  font-family: Roboto, Arial;
+  background:  rgb(87, 87, 87);
+  color: rgb(255, 255, 255);
+  padding: 0.1px 3px;
+  border-radius: 100%;
+  margin-left: 3px;
+  
+}
+
+a{
+  color: black;
+   text-decoration: none;
+}

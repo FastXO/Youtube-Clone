@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> www.youtubebyrafay.com</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/video.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+
+</head>
+<body>
+
+  <header class="header"> <!--Position absolute inside relative for tooltips -->
+    
+    <div class="left-section"> 
+
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg"> 
+      <img class="youtube-logo" src="icons/youtube-logo.svg"> 
+    
+    </div>
+
+    <div class="middle-section">  
+      
+      <input class="search-bar" type="text" placeholder="Search"> 
+   
+      <button onclick="searchOnYouTube() " class="search-button"> <img class="search-icon" src="icons/search.svg"> 
+        <div class="Tooltip">Search </div> 
+      </button>  
+    
+      <button onclick="startVoiceSearch()" class="voice-search-button"> <img class="voice-search-icon" src="icons/voice-search-icon.svg" > 
+        <div class="Tooltip">Search with your voice</div>
+      </button> 
+     
+    </div>
+
+    <div class="right-section">
+
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="Tooltip">Create</div>
+      </div>
+
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="Tooltip">YouTube apps</div>
+      </div>
+    
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg" > 
+        <div class="notifications-count">3 </div>
+        <div class="Tooltip">Notifications</div>
+      </div>
+     <a href="https://www.youtube.com/channel/UCAb_jIpwCf7WJ5nPePIpbSg"> <img class="current-user-picture" src="channel-pictures/my-channel.jpg"> </a>
+    
+    </div>
+  </header>
+ 
+  <nav class="sidebar">
+    
+    <div class="sidebar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
+    </div>
+
+    <div class="sidebar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
+    </div>
+
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+
+    <div class="sidebar-link">
+      <img src="icons/originals.svg">
+      <div>Originals</div>
+    </div>
+
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg">
+      <div>Youtube Music</div>
+    </div>
+
+    <div class="sidebar-link">
+      <img src="icons/library.svg">
+      <div>Library</div>
+    </div>
+
+
+  </nav>
+<main>
+  <section class="video-grid">
+    <div class="video-preview" >
+      <div class="thumbnail-row">  
+        
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"> <img class="thumbnail" src="thumbnails/thumbnail-1.webp"> </a>
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  <div  class="video-time">14:20 </div> </a>
+      </div>
+    
+    
+      <div class="video-info-grid">
+
+        <div class="channel-picture"> 
+    
+          <a href="https://www.youtube.com/@mkbhd">  <img  class="profile-picture" src="channel-pictures/channel-1.jpeg" > </a>
+            
+        </div>
+    
+        <div class="video-info">
+    
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  <p class="video-title"> Talking Tech and AI with Google CEO Sundar Pichai!</p></a>
+      
+          <a href="https://www.youtube.com/@mkbhd"> <p class="video-author">Marques Brownlee <span class="circle-checkmark">✓</span> </p> </a>
+            
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"> <p class="video-stats">3.4M views &#183; 6 months ago </p> </a>
+    
+        </div>
+    
+    
+      </div>
+    
+       
+       
+      
+    
+    </div>
+      
+        <div class="video-preview">
+    
+      <div class="thumbnail-row">
+    
+        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk"><img class="thumbnail" src="thumbnails/thumbnail-2.webp" href="www.youtube.com"></a>
+        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk"> <div class="video-time">8:22 </div> </a>
+      </div>
+    
+          <div class="video-info-grid">
+    
+      <div class="channel-picture"> 
+    
+        <a href="https://www.youtube.com/@markiplier"><img class="profile-picture" src="channel-pictures/channel-2.jpeg"></a>
+        
+      </div>
+    
+    <div class="video-info">
+    
+      <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk"> <p class="video-title"> Try Not To Laugh Challenge #9</p></a>
+      
+      <a href="https://www.youtube.com/@markiplier"> <p class="video-author">Markiplier <span class="circle-checkmark">✓</span> </p></a>
+      
+      <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk"> <p class="video-stats">20M views &#183; 5 years ago </p></a>
+    </div>
+    
+    
+    </div>
+    
+    
+          </div>
+    
+          <div class="video-preview">
+    
+    
+            <div class="thumbnail-row">  
+              
+              <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w"><img class="thumbnail" src="thumbnails/thumbnail-3.webp"></a>
+              <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">  <div class="video-time">9:13 </div> </a>
+            </div>
+          
+          
+            <div class="video-info-grid">
+          
+              <div class="channel-picture"> 
+          
+                <a href="https://www.youtube.com/@SSSniperWolf">   <img class="profile-picture" src="channel-pictures/channel-3.jpeg"> </a>
+          
+              </div>
+          
+              <div class="video-info">
+          
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">  <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p></a>
+            
+                <a href="https://www.youtube.com/@SSSniperWolf"> <p class="video-author">SSSniperWolf <span class="circle-checkmark">✓</span></p></a>
+                  
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w"> <p class="video-stats">14M views &#183;2 years ago</p> </a>
+          
+              </div>
+          
+          
+            </div>
+          
+             
+             
+            
+          
+          </div>
+            
+              <div class="video-preview">
+          
+            <div class="thumbnail-row">
+          
+              <a href="https://www.youtube.com/watch?v=094y1Z2wpJg"> <img class="thumbnail" src="thumbnails/thumbnail-4.webp"> </a>
+              <a href="https://www.youtube.com/watch?v=094y1Z2wpJg"> <div class="video-time">22:09 </div> </a>
+            </div>
+          
+                <div class="video-info-grid">
+          
+            <div class="channel-picture"> 
+          
+              <a href="https://www.youtube.com/@veritasium"> <img class="profile-picture" src="channel-pictures/channel-4.jpeg"> </a>
+          
+            </div>
+          
+          <div class="video-info">
+          
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">  <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p> </a>
+            
+            <a href="https://www.youtube.com/@veritasium"><p class="video-author">Veritasium <span class="circle-checkmark">✓</span> </p></a>
+            
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg"> <p class="video-stats">35M views &#183;1 year ago</p> </a>
+          </div>
+          
+          
+          </div>
+                </div>  
+                <div class="video-preview">
+    
+    
+                  <div class="thumbnail-row">  
+                    
+                    <a href="https://www.youtube.com/watch?v=86CQq3pKSUw"> <img class="thumbnail" src="thumbnails/thumbnail-5.webp"></a>
+                    <a href="https://www.youtube.com/watch?v=86CQq3pKSUw"> <div class="video-time">11:17 </div> </a>
+                  </div>
+                
+                
+                  <div class="video-info-grid">
+                
+                    <div class="channel-picture"> 
+                
+                      <a href="https://www.youtube.com/@CSDojo"> <img class="profile-picture" src="channel-pictures/channel-5.jpeg"> </a>
+                
+                    </div>
+                
+                    <div class="video-info">
+                
+                      <a href="https://www.youtube.com/watch?v=86CQq3pKSUw"> <p class="video-title"> Kadane's Algorithm to Maximum Sum Subarray Problem</p> </a>
+                  
+                      <a href="https://www.youtube.com/@CSDojo"> <p class="video-author">CS Dojo <span class="circle-checkmark">✓</span> </p> </a>
+                        
+                      <a href="https://www.youtube.com/watch?v=86CQq3pKSUw"><p class="video-stats">640K views &#183; 7 years ago </p></a>
+                
+                    </div>
+                
+                
+                  </div>
+                
+                   
+                   
+                  
+                
+                </div>
+                  
+                    <div class="video-preview">
+                
+                  <div class="thumbnail-row">
+                
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg"> <img class="thumbnail" src="thumbnails/thumbnail-6.webp"> </a>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg"> <div class="video-time">19:59 </div></a>
+                  </div>
+                
+                      <div class="video-info-grid">
+                
+                  <div class="channel-picture"> 
+                
+                    <a href="https://www.youtube.com/@MrBeast">  <img class="profile-picture" src="channel-pictures/channel-6.jpeg"> </a>
+                
+                  </div>
+                
+                <div class="video-info">
+                
+                  <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg"> <p class="video-title">Anything You Can Fit In The Circle I'll Pay For</p> </a>
+                  
+                  <a href="https://www.youtube.com/@MrBeast"> <p class="video-author">MrBeast <span class="circle-checkmark">✓</span> </p> </a>
+                  
+                  <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg"> <p class="video-stats">238M views &#183;3 years ago</p> </a>
+                </div>         
+                
+              </div>
+            </div>            
+            <div class="video-preview">
+    
+    
+              <div class="thumbnail-row">  
+                
+                <a href="https://www.youtube.com/watch?v=BOXg_AJOxQI"> <img class="thumbnail" src="thumbnails/thumbnail-7.webp"></a>
+                <a href="https://www.youtube.com/watch?v=BOXg_AJOxQI"> <div class="video-time">1:36 </div> </a>
+              </div>
+            
+            
+              <div class="video-info-grid">
+            
+                <div class="channel-picture"> 
+            
+                  <a href="https://www.youtube.com/@CrunchyrollCollection"> <img class="profile-picture" src="channel-pictures/channel-7.jpg"> </a>
+            
+                </div>
+            
+                <div class="video-info">
+            
+                  <a href="https://www.youtube.com/watch?v=BOXg_AJOxQI"> <p class="video-title"> Zoro Makes Kaido Dodge | One Piece</p> </a>
+              
+                  <a href="https://www.youtube.com/@CrunchyrollCollection"> <p class="video-author"> Crunchyroll Collection <span class="circle-checkmark">✓</span> </p> </a>
+                    
+                  <a href="https://www.youtube.com/watch?v=BOXg_AJOxQI"> <p class="video-stats">5.8M views&#183; 2 years ago </p> </a>
+            
+                </div>
+              </div>
+              </div>
+              <div class="video-preview">
+    
+    
+                <div class="thumbnail-row">  
+                  
+                  <a href="https://www.youtube.com/watch?v=wN-mZtbX2Pg&ab_channel=OnlineAlarmKur"> <img class="thumbnail" src="thumbnails/thumbnail-8.webp"></a>
+                  <a href="https://www.youtube.com/watch?v=wN-mZtbX2Pg&ab_channel=OnlineAlarmKur"><div class="video-time">1:00:09 </div></a>
+                </div>
+              
+              
+                <div class="video-info-grid">
+              
+                  <div class="channel-picture"> 
+              
+                    <a href="https://www.youtube.com/@OnlineAlarmKurTV"> <img class="profile-picture" src="channel-pictures/channel-8.jpg"> </a>
+              
+                  </div>
+              
+                  <div class="video-info">
+              
+                    <a href="https://www.youtube.com/watch?v=wN-mZtbX2Pg&ab_channel=OnlineAlarmKur"> <p class="video-title"> 1 Hour Timer</p> </a>
+                
+                    <a href="https://www.youtube.com/@OnlineAlarmKurTV"> <p class="video-author">Online Alarm Kur</p> </a>
+                      
+                    <a href="https://www.youtube.com/watch?v=wN-mZtbX2Pg&ab_channel=OnlineAlarmKur"> <p class="video-stats">7M views &#183; 4 years ago </p> </a>
+              
+                  </div>
+              
+              
+                </div>
+              </div>
+              <div class="video-preview">
+    
+    
+                <div class="thumbnail-row">  
+            
+                  <a href="https://www.youtube.com/watch?v=719ErDnq76E&ab_channel=GinoMachino"> <img class="thumbnail" src="thumbnails/thumbnail-9.webp"></a>
+                  <a href="https://www.youtube.com/watch?v=719ErDnq76E&ab_channel=GinoMachino"> <div class="video-time">5:00:59 </div> </a>
+                </div>
+              
+              
+                <div class="video-info-grid">
+              
+                  <div class="channel-picture"> 
+              
+                    <a href="https://www.youtube.com/@GinoMachino"> <img class="profile-picture" src="channel-pictures/channel-9.jpg"> </a>
+              
+                  </div>
+              
+                  <div class="video-info">
+              
+                    <a href="https://www.youtube.com/watch?v=719ErDnq76E&ab_channel=GinoMachino"> <p class="video-title"> ALL 165 Elden Ring Bosses Without Dying BUT Everything Is RANDOM!</p></a>
+                
+                    <a href="https://www.youtube.com/@GinoMachino">   <p class="video-author"> GinoMachino <span class="circle-checkmark">✓</span> </p> </a>
+                      
+                    <a href="https://www.youtube.com/watch?v=719ErDnq76E&ab_channel=GinoMachino"> </a><p class="video-stats">250K views &#183; 2 days ago </p></a>
+              
+                  </div>
+              
+              
+                </div>
+              </div>
+              <div class="video-preview">
+    
+    
+                <div class="thumbnail-row">  
+                  
+                  <a href="https://www.youtube.com/watch?v=_4kHxtiuML0&ab_channel=GreenredProductions-RelaxingMusic"> <img class="thumbnail" src="thumbnails/thumbnail-10.webp"></a>
+                  <a href="https://www.youtube.com/watch?v=_4kHxtiuML0&ab_channel=GreenredProductions-RelaxingMusic"><div class="video-time">9:08:53 </div></a>
+                </div>
+              
+              
+                <div class="video-info-grid">
+              
+                  <div class="channel-picture"> 
+              
+                    <a href="https://www.youtube.com/@GreenredProductions"> <img class="profile-picture" src="channel-pictures/channel-10.jpg"></a>
+              
+                  </div>
+              
+                  <div class="video-info">
+              
+                    <a href="https://www.youtube.com/watch?v=_4kHxtiuML0&ab_channel=GreenredProductions-RelaxingMusic"> <p class="video-title"> Focus Music for Work and Studying, Background Music for Concentration, Study Music</p></a>
+                
+                    <a href="https://www.youtube.com/@GreenredProductions"><p class="video-author">Greenred Productions - Relaxing Music <span class="circle-checkmark">✓</span> </p></a>
+                      
+                    <a href="https://www.youtube.com/watch?v=_4kHxtiuML0&ab_channel=GreenredProductions-RelaxingMusic"><p class="video-stats">41M views &#183; 3 years ago </p></a>
+              
+                  </div>
+              
+              
+                </div>
+              </div>
+              <div class="video-preview">
+    
+    
+                <div class="thumbnail-row">  
+                  
+                  <a href="https://www.youtube.com/watch?v=dug56u8NN7g&ab_channel=MarvelEntertainment"> <img class="thumbnail" src="thumbnails/thumbnail-11.webp"></a>
+                  <a href="https://www.youtube.com/watch?v=dug56u8NN7g&ab_channel=MarvelEntertainment"> <div class="video-time">11:17 </div> </a>
+                </div>
+              
+              
+                <div class="video-info-grid">
+              
+                  <div class="channel-picture"> 
+              
+                    <a href="https://www.youtube.com/@marvel"> <img class="profile-picture" src="channel-pictures/channel-11.jpg"></a>
+              
+                  </div>
+              
+                  <div class="video-info">
+              
+                    <a href="https://www.youtube.com/watch?v=dug56u8NN7g&ab_channel=MarvelEntertainment"> <p class="video-title"> Marvel Studios&#39; Loki Season 2 | Official Trailer | Disney&#43;</p></a>
+                
+                    <a href="https://www.youtube.com/@marvel"> <p class="video-author">Marvel Entertainment <span class="circle-checkmark">✓</span> </p></a>
+                      
+                    <a href="https://www.youtube.com/watch?v=dug56u8NN7g&ab_channel=MarvelEntertainment"> <p class="video-stats">9.7M views &#183; 1 day ago </p></a>
+              
+                  </div>
+              
+              
+                </div>
+              </div>
+              <div class="video-preview">
+    
+    
+                <div class="thumbnail-row">  
+                  
+                  <a href="https://www.youtube.com/watch?v=qrzyJGe4wMs&ab_channel=RelaxingMelody"> <img class="thumbnail" src="thumbnails/thumbnail-12.webp"> </a>
+                  <a href="https://www.youtube.com/watch?v=qrzyJGe4wMs&ab_channel=RelaxingMelody"> <div class="video-time">47:50:35 </div> </a>
+                </div>
+              
+              
+                <div class="video-info-grid">
+              
+                  <div class="channel-picture"> 
+              
+                    <a href="https://www.youtube.com/@RelaxingMelody88">  <img class="profile-picture" src="channel-pictures/channel-12.jpg"> </a>
+              
+                  </div>
+              
+                  <div class="video-info">
+              
+                    <a href="https://www.youtube.com/watch?v=qrzyJGe4wMs&ab_channel=RelaxingMelody"> <p class="video-title"> Ambient Study Music To Concentrate - Music for Studying, Concentration and Memory &#35;565</p>  </a>
+                
+                    <a href="https://www.youtube.com/@RelaxingMelody88"> <p class="video-author">Relaxing Melody </p> </a>
+                      
+                    <a href="https://www.youtube.com/watch?v=qrzyJGe4wMs&ab_channel=RelaxingMelody"> <p class="video-stats">154K views &#183; 2 months ago </p> </a>
+              
+                  </div>
+              
+              
+                </div>
+              </div>
+          </section>
+
+          <script>
+
+
+          function searchOnYouTube() 
+          {
+      var searchQuery = document.querySelector(".search-bar").value;
+      if (searchQuery.trim() === "") {
+        
+      } else {
+        // Construct the YouTube search URL with the search query
+        var youtubeSearchUrl = "https://www.youtube.com/results?search_query=" + encodeURIComponent(searchQuery);
+        
+        // Redirect to the YouTube search results page in the same tab
+        window.location.href = youtubeSearchUrl;
+      }
+    }
+
+    let recognition;
+    function startVoiceSearch() {
+      if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+        recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        
+        recognition.lang = 'en-US'; // Set the language for speech recognition
+        
+        recognition.onstart = function() {
+          console.log('Voice recognition started.');
+          document.querySelector(".voice-search-button").classList.add('recording'); // Add 'recording' class to change button color
+        };
+        
+        recognition.onresult = function(event) {
+          const transcript = event.results[0][0].transcript;
+          document.querySelector(".search-bar").value = transcript;
+          console.log('Voice search result:', transcript);
+          searchOnYouTube(transcript);
+          recognition.stop(); // Stop recognition when result is received
+        };
+        
+        recognition.onerror = function(event) {
+          console.error('Error occurred in voice recognition:', event.error);
+          recognition.stop(); // Stop recognition on error
+        };
+        
+        recognition.onend = function() {
+          console.log('Voice recognition ended.');
+          document.querySelector(".voice-search-button").classList.remove('recording'); // Remove 'recording' class to revert button color
+        };
+        
+        recognition.start();
+      } else {
+        alert('Your browser does not support voice recognition.');
+      }
+    }
+
+    
+          </script>
+        
+        </main>     
+      </body>
+    </html>

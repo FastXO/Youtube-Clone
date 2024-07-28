@@ -1,0 +1,21 @@
+p{
+  font-family: Montserrat;
+}
+
+.Title-Text{
+font-size: 48px;
+font-weight: bold;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.Title-Subtext{
+font-size: 24px;
+text-align: center;
+margin-top: 14px;
+}
+
+.Title-Subtext-Span{
+text-decoration: underline; 
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style>
+.close-button{
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-family: Arial;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Greybox{
+  width: 320px;
+  height: 180px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: grey;
+}
+
+.Time{
+  color: white;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-family: Arial;
+  font-size: 20px;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+}
+
+.Image-Container{
+  position: relative ;
+  display: inline-block;
+  border: 10px;
+  border: solid;
+}
+.Shirt{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.Discount{
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  color: white;
+  background-color: black;
+  font-family: Arial;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.Cart{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Add-button{
+  background-color: white;
+  color: black;
+  border: solid;
+  border-color: black;
+  font-family: arial;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+</style>  
+</head>
+
+<body style="height: 300px;">
+
+
+
+<div class="Greybox"> 
+
+  <div class="Time"> 0:29  
+  </div> 
+  <div class="close-button"> X  
+  </div> 
+</div>
+
+<div class="Image-Container"> 
+
+  <img class="Shirt" src="shirt.jpg" >
+
+  <div class="Discount"> 20% OFF</div>
+
+  <div class="Cart"> <button class="Add-button"> Add to Cart </button> </div> 
+
+</div>
+
+
+
+</body>
+</html>
